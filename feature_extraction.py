@@ -5,7 +5,7 @@ import numpy as np
 from librosa import load
 from librosa.feature import mfcc
 
-def preprocess(directory="./data/genres/", filename="my.dat"):
+def preprocess(directory="C:/Project/", filename="gtzan.dat"):
     f = open(filename ,'wb')
     i=0
     for folder in os.listdir(directory):
@@ -27,7 +27,7 @@ def preprocess(directory="./data/genres/", filename="my.dat"):
             pickle.dump(feature, f)
     f.close()
 
-def loadDataset(filename="my.dat"):
+def loadDataset(filename="gtzan.dat"):
     if not os.path.exists(filename):
         preprocess(filename=filename)
     data, labels = [], []
