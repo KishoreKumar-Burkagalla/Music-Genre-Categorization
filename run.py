@@ -3,7 +3,7 @@ from sklearn.model_selection import StratifiedKFold
 from feature_extraction import loadDataset
 from knn import getAccuracy, nearestClass, getNeighbors
 
-data, labels = loadDataset(filename="my.dat")
+data, labels = loadDataset(filename="gtzan.dat")
 
 # Stratified K-Fold cross-validation with 10 splits
 skf = StratifiedKFold(n_splits = 10, shuffle = True, random_state = 1)
