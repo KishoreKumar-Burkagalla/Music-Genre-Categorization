@@ -3,9 +3,9 @@ import numpy as np
 from librosa import load
 from librosa.feature import mfcc
 
-directory="./data/genres/"
-folder="blues"
-file="blues.00000.wav"
+directory="C:/"
+folder="Project"
+file="StarWars60.wav"
 sig, rate = load(directory+folder+"/"+file)
 print(rate)
 #wav.read(directory+folder+"/"+file)
